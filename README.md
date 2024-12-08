@@ -33,19 +33,17 @@ The CS Messaging Web App is a customer service platform where customers can send
 ## Setup and Installation
 
 ### Prerequisites
-1. Install **Node.js** and **npm**:
-   - [Download Node.js](https://nodejs.org/)
-2. Install **MySQL**:
-   - ```bash
+1. Install **MySQL**:
+   ```bash
    sudo apt update
    sudo apt install mysql-server
    sudo service mysql start
    ```
-3. Install Dependencies:
-- ```bash
+2. Install Dependencies:
+```bash
 npm install express mysql2 dotenv cors
 ```
-4. Install npm and nodejs:
+3. Install npm and nodejs:
 ```bash
 sudo apt install nodejs npm
 ```
@@ -176,7 +174,7 @@ Contributions are welcome! Feel free to fork the repository and submit a pull re
 
 ## Contact
 For questions or feedback, reach out at:
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **GitHub**: [your-username](https://github.com/your-username)
+- **Email**: [hussainganie388@gmail.com](mailto:hussainganie388@gmail.com)
+- **GitHub**: [Sadam452](https://github.com/sadam452)
 
 ---
