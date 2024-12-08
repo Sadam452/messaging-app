@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ02XQ7q5m9J9F33VtwkK1Ch7FfJ7zUuVztY99cmqEo7h8X0aa3JZ4bO3ni7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Messaging App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+      </div>
+        <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+            <h2 class="text-center mb-4">Login</h2>
+
+            <form id="login-form">
+                <div class="mb-3">
+                    <label for="user-id" class="form-label">User ID</label>
+                    <input type="number" class="form-control" id="user-id" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+
+                <fieldset class="mb-3">
+                    <legend class="form-label">Login as:</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="customer" name="login-as" value="customer" checked>
+                        <label class="form-check-label" for="customer">Customer</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="agent" name="login-as" value="agent">
+                        <label class="form-check-label" for="agent">Agent</label>
+                    </div>
+                </fieldset>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+
+            <div id="login-result" class="mt-3"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional, for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybU7bm7pKpP9G1gBhb59l4Xv68Mz6esrPfoFf3bGo9yX8m5Xnx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0ey8sP6WgFy5g8bPzkf41z6j5IX5Ff5AnzqQUg5N10BRHToy3yE6FQK3" crossorigin="anonymous"></script> -->
+    <script src="app.js"></script>
+
+</body>
+</html>

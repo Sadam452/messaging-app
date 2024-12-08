@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard</title>
+  <!-- Link to Bootstrap 4 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f9;
+      padding-top: 50px;
+    }
+    .dashboard-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .message-card {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container dashboard-container">
+    <h2 class="text-center">Customer Dashboard</h2>
+    <p id="welcome-message" class="text-center"></p>
+
+    <h3>Your Messages:</h3>
+    <table class="table table-striped" id="messages-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Message</th>
+          <th>Timestamp</th>
+          <th>Agent Response</th>
+        </tr>
+      </thead>
+      <tbody id="messages-list">
+        <!-- Messages will be loaded here -->
+      </tbody>
+    </table>
+
+    <h3>Send a New Message</h3>
+    <form id="send-message-form">
+      <div class="form-group">
+        <textarea class="form-control" id="message-body" required placeholder="Enter your message here..." rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

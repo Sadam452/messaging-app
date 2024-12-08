@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Messaging Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Customer Messages</h1>
+
+    <!-- Search bar for messages -->
+    <input type="text" id="search-query" placeholder="Search messages..." />
+    <button id="search-btn">Search</button>
+
+    <table id="messages-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User ID</th>
+          <th>Timestamp</th>
+          <th>Message</th>
+          <th>Agent Response</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="response-form">
+      <h2>Respond to Message</h2>
+      <input type="text" id="message-id" placeholder="Message ID" />
+      <textarea id="agent-response" placeholder="Enter your response here..."></textarea>
+      <button id="submit-response">Submit Response</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
