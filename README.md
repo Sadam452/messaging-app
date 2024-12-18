@@ -1,4 +1,4 @@
-# CS Messaging Web App
+# CS Messaging Web App [ Simple Assignment for learning purpose ]
 
 ## Overview
 The CS Messaging Web App is a customer service platform where customers can send messages and agents can respond to them. It includes a dashboard for agents to manage messages and a customer interface to view and send messages. The app is built with **Node.js**, **Express**, **MySQL**, and **Bootstrap** for responsive design.
